@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "411774737290",
+    "firebase_url": "https://macro-parity-237003.firebaseio.com",
+    "project_id": "macro-parity-237003",
+    "storage_bucket": "macro-parity-237003.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411774737290:android:72c7631b1a9b92c47e8673",
+        "android_client_info": {
+          "package_name": "com.togo82.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411774737290-040333sllhkvbghdst8mgchg37or240n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBTXYL_iui3tOsQeI446grJ48hScues4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411774737290-040333sllhkvbghdst8mgchg37or240n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
