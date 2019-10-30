@@ -13,7 +13,8 @@ export default class LoginController extends Component {
     }
     componentDidMount() {
         GoogleSignin.configure({
-            webClientId: 'YOUR_WEB_CLIENT_ID_HERE',
+            //scopes: ['https://www.googleapis.com/auth/drive.readonly'],
+            webClientId: '411774737290-040333sllhkvbghdst8mgchg37or240n.apps.googleusercontent.com',
             offlineAccess: true,
             hostedDomain: '',
             forceConsentPrompt: true,
@@ -26,7 +27,9 @@ export default class LoginController extends Component {
             const userInfo = await GoogleSignin.signIn();
             this.setState({ userInfo: userInfo, loggedIn: true });
         } catch (error) {
-            alert(error);
+            console.log(error);
+            console.log(error.code);
+            alert(error, error.code);
             if (error.code === statusCodes.SIGN_IN_CANCELLED) {
                 // user cancelled the login flow
             } else if (error.code === statusCodes.IN_PROGRESS) {

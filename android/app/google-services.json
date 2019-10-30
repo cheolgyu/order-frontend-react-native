@@ -8,12 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:411774737290:android:72c7631b1a9b92c47e8673",
+        "mobilesdk_app_id": "1:411774737290:android:b747dcb89a0d17647e8673",
         "android_client_info": {
-          "package_name": "com.togo82.user"
+          "package_name": "com.togo82"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "411774737290-6t8ig8jbosgsldmfuohbj90rp6tqob25.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.togo82",
+            "certificate_hash": "cc4adc885da9e64219c7ae95e88390b7dbeeb7d4"
+          }
+        },
         {
           "client_id": "411774737290-040333sllhkvbghdst8mgchg37or240n.apps.googleusercontent.com",
           "client_type": 3
@@ -30,6 +38,13 @@
             {
               "client_id": "411774737290-040333sllhkvbghdst8mgchg37or240n.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "411774737290-t62g3aj8c72mosc87l80l8sj12r9c0q5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.togo82.user"
+              }
             }
           ]
         }
