@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@react-native-community/google-signin": "^3.0.3",
+    "@react-native-seoul/kakao-login": "^2.1.0",
+    "@react-native-seoul/naver-login": "^1.0.0-rc2",
     "react": "16.9.0",
     "react-native": "0.61.3"
   },
