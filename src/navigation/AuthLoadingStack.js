@@ -1,4 +1,15 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import AuthLoginScreen from '../screens/authLogin/AuthLoginScreen';
+import AuthLoadingScreen from '../screens/authLoading/AuthLoadingScreen';
 
-export default createStackNavigator({ AuthLogin: AuthLoginScreen });
+export default createStackNavigator({ AuthLoading: AuthLoadingScreen },
+    {
+        defaultNavigationOptions: {
+            headerStyle: {
+                backgroundColor: '#f4511e',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                fontWeight: 'bold',
+            },
+        },
+    }); 

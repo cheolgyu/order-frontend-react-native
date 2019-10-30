@@ -12,7 +12,7 @@ export default createAppContainer(
     createSwitchNavigator(
         {
             AgreeService: AgreeServiceStack,
-            AuthLoading: AuthLoadingStack,
+            //AuthLoading: AuthLoadingStack,
             Auth: AuthStack,
             App: AppStack,
         },

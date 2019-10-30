@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-class AuthLoginScreen extends React.Component {
+class AuthLoadingScreen extends React.Component {
     render() {
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <Text>AuthLoginScreen Screen</Text>
+                <Text>AuthLoadingScreen Screen</Text>
             </View>
         );
     }
 }
-export default AuthLoginScreen;
+export default AuthLoadingScreen;

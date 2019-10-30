@@ -30,11 +30,11 @@ class PrivacyScreen extends React.Component {
     render() {
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <Text>PrivacyScreen</Text>
+                <Text>개인정보처리방침</Text>
                 <Text>Count: {this.state.count}</Text>
                 <Button
-                    title="Go to Details"
-                    onPress={() => this.props.navigation.navigate('Details')}
+                    title="Go to Terms"
+                    onPress={() => this.props.navigation.navigate('Terms')}
                 />
             </View>
         );

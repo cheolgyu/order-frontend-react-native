@@ -30,11 +30,11 @@ class TermsScreen extends React.Component {
     render() {
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <Text>TermsScreen</Text>
+                <Text>개인정보보호 및 약관</Text>
                 <Text>Count: {this.state.count}</Text>
                 <Button
-                    title="Go to Details"
-                    onPress={() => this.props.navigation.navigate('Details')}
+                    title="Go to Login"
+                    onPress={() => this.props.navigation.navigate('Login')}
                 />
             </View>
         );
