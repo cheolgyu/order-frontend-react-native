@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 
 import { GoogleSignin, GoogleSigninButton, statusCodes } from '@react-native-community/google-signin';
 
@@ -47,6 +47,10 @@ class LoginScreen extends React.Component {
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                 <Text>LoginScreen Screen</Text>
+                <Button
+                    title="Go to privacy"
+                    onPress={() => this.props.navigation.navigate('Privacy')}
+                />
                 <GoogleSigninButton
                     style={{ width: 192, height: 48 }}
                     size={GoogleSigninButton.Size.Wide}
