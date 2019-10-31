@@ -12,6 +12,11 @@ type State = {
 
 
 class LoginScreen extends React.Component {
+    static navigationOptions = ({ navigation }) => {
+        return {
+            title: '3.로그인'
+        };
+    };
     state = {
         userInfo: null,
         error: null,

@@ -24,6 +24,7 @@ class PrivacyScreen extends React.Component {
             const agree_privacy = await AsyncStorage.getItem('@agree:privacy');
             const agree_terms = await AsyncStorage.getItem('@agree:terms');
             const auth_login = await AsyncStorage.getItem('@auth:login');
+
             var nav = "Terms";
             if (agree_privacy) {
                 if (agree_terms) {
@@ -35,6 +36,7 @@ class PrivacyScreen extends React.Component {
                 } else {
                     nav = "Terms";
                 }
+            } else {
                 nav = ""
             }
 
