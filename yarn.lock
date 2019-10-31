@@ -666,9 +666,9 @@
   integrity sha512-1dVNHT76Uu5N3eJNTYcvxee+jzX4Z9lfciqRRHCU27ihbUcYi+iSc2iml5Ke1LXe1SyJCLA0+14Jh4tXJgOppA==
 
 "@hapi/hoek@8.x.x", "@hapi/hoek@^8.3.0":
-  version "8.3.2"
-  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-8.3.2.tgz#91e7188edebc5d876f0b91a860f555ff06f0782b"
-  integrity sha512-NP5SG4bzix+EtSMtcudp8TvI0lB46mXNo8uFpTDw6tqxGx4z5yx+giIunEFA0Z7oUO4DuWrOJV9xqR2tJVEdyA==
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-8.5.0.tgz#2f9ce301c8898e1c3248b0a8564696b24d1a9a5a"
+  integrity sha512-7XYT10CZfPsH7j9F1Jmg1+d0ezOux2oM2GfArAzLwWe4mE2Dr3hVjsAL6+TFY49RRJlCdJDMw3nJsLFroTc8Kw==
 
 "@hapi/joi@^15.0.3":
   version "15.1.1"
@@ -839,11 +839,6 @@
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/@react-native-community/async-storage/-/async-storage-1.6.2.tgz#a19ca7149c4dfe8216f2330e6b1ebfe2d075ef92"
   integrity sha512-EJGsbrHubK1mGxPjWB74AaHAd5m9I+Gg2RRPZzMK6org7QOU9WOBnIMFqoeVto3hKOaEPlk8NV74H6G34/2pZQ==
-
-"@react-native-community/checkbox@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@react-native-community/checkbox/-/checkbox-0.2.1.tgz#39f3e4010f01cab4bf28fcdd369a6f7c438e3228"
-  integrity sha512-oermCrdOylk+daqeFdd13Unh05iaKXi9nwQHdpN5qzPdXWTtBf6KjIpkrumcXfO9C3YWzEUd1gVR/C9NldZekQ==
 
 "@react-native-community/cli-platform-android@^3.0.0-alpha.1", "@react-native-community/cli-platform-android@^3.0.0-alpha.7":
   version "3.0.0-alpha.7"
@@ -1065,9 +1060,9 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "12.11.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.11.7.tgz#57682a9771a3f7b09c2497f28129a0462966524a"
-  integrity sha512-JNbGaHFCLwgHn/iCckiGSOZ1XYHsKFwREtzPwSGCVld1SGhOlmZw2D4ZI94HQCrBHbADzW9m4LER/8olJTRGHA==
+  version "12.12.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.3.tgz#ebfe83507ac506bc3486314a8aa395be66af8d23"
+  integrity sha512-opgSsy+cEF9N8MgaVPnWVtdJ3o4mV2aMHvDq7thkQUFt0EuOHJon4rQpJfhjmNHB+ikl0Cd6WhWIErOyQ+f7tw==
 
 "@types/semver@^6.0.2":
   version "6.2.0"
@@ -5947,9 +5942,9 @@ source-map-resolve@^0.5.0:
     urix "^0.1.0"
 
 source-map-support@^0.5.6, source-map-support@^0.5.9:
-  version "0.5.15"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.15.tgz#20fe16f16e74644e21a396c78c841fa66e35df6c"
-  integrity sha512-wYF5aX1J0+V51BDT3Om7uXNn0ct2FWiV4bvwiGVefxkm+1S1o5jsecE5lb2U28DDblzxzxeIDbTVpXHI9D/9hA==
+  version "0.5.16"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.16.tgz#0ae069e7fe3ba7538c64c98515e35339eac5a042"
+  integrity sha512-efyLRJDr68D9hBBNIPWFjhpFzURh+KJykQwvMyW5UiZzYwoF6l4YMMDIJJEyFWxWCqfyxLzz6tSfUFR+kXXsVQ==
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
