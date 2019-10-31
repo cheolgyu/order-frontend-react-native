@@ -961,10 +961,10 @@
   dependencies:
     dooboolab-welcome "^1.1.0"
 
-"@react-native-seoul/naver-login@^1.0.0-rc2":
-  version "1.0.0-rc2"
-  resolved "https://registry.yarnpkg.com/@react-native-seoul/naver-login/-/naver-login-1.0.0-rc2.tgz#3731ad17c7bdfb6bdba99e39fd788dd9e117e17f"
-  integrity sha512-LGLUzj5U3Ovj+/S+ayDPPsbj+5S7ZhpuHbSpim2/iV88bKOaV9cYJAkeMRzWZ7PpL4IXueMaktkj7nkFOGi7/g==
+"@react-native-seoul/naver-login@^1.0.1-rc1":
+  version "1.0.1-rc1"
+  resolved "https://registry.yarnpkg.com/@react-native-seoul/naver-login/-/naver-login-1.0.1-rc1.tgz#aa31321d70453d5cc6a22d5da0578a7bc1a38e87"
+  integrity sha512-i1Zo3RmxTn1LPXw0HQ36rtf8sau7tx+pKRhKMpoi0I4X0Z2WvBisp8EkBMVfM+dmTvOJEcJ/NS3kugx1fojLqA==
   dependencies:
     dooboolab-welcome "^1.1.1"
 
