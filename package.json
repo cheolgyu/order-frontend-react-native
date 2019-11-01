@@ -12,6 +12,8 @@
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.2",
     "@react-native-community/google-signin": "^3.0.3",
+    "@react-native-firebase/app": "^6.0.3",
+    "@react-native-firebase/messaging": "^6.0.3",
     "@react-native-seoul/kakao-login": "^2.1.0",
     "@react-native-seoul/naver-login": "^1.0.1-rc1",
     "react": "16.9.0",

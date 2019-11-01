@@ -13,6 +13,8 @@ import co.apptailor.googlesignin.RNGoogleSigninPackage;  // <--- import
 import com.dooboolab.kakaologins.RNKakaoLoginsPackage;
 import com.dooboolab.naverlogin.RNNaverLoginPackage;
 
+import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
+
 
 public class MainApplication extends Application implements ReactApplication {
 

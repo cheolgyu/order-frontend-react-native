@@ -4,6 +4,10 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 //import AppContainer from './src/navigation/AppNavigator';
 import AppContainer from './src/navigation/AppContainer';
+import AsyncStorage from '@react-native-community/async-storage';
+
+import firebase from '@react-native-firebase/app';
+import '@react-native-firebase/messaging';
 
 // gets the current screen from navigation state
 function getActiveRouteName(navigationState) {
@@ -19,6 +23,79 @@ function getActiveRouteName(navigationState) {
 }
 
 class App extends React.Component {
+
+  componentDidMount() {
+    this.init();
+    this.checkPermission();
+    this.createNotificationListeners();
+  }
+  async init() {
+    let fcmToken = await AsyncStorage.getItem('fcmToken');
+    fcmToken = await firebase.messaging().getToken();
+    console.log(fcmToken);
+  }
+  async getToken() {
+    let fcmToken = await AsyncStorage.getItem('fcmToken');
+    if (!fcmToken) {
+      fcmToken = await firebase.messaging().getToken();
+      if (fcmToken) {
+        await AsyncStorage.setItem('fcmToken', fcmToken);
+      }
+    }
+  }
+
+  async checkPermission() {
+    const enabled = await firebase.messaging().hasPermission();
+    if (enabled) {
+      this.getToken();
+    } else {
+      this.requestPermission();
+    }
+  }
+
+  async requestPermission() {
+    try {
+      await firebase.messaging().requestPermission();
+      this.getToken();
+    } catch (error) {
+      console.log('permission rejected');
+    }
+  }
+
+  async createNotificationListeners() {
+    firebase.messaging().onMessage(async (remoteMessage) => {
+      try {
+        const currentMessages = await AsyncStorage.getItem('messages');
+        let messageArray = [];
+        if (currentMessages != null) {
+          messageArray = JSON.parse(currentMessages);
+        }
+        messageArray.push(remoteMessage.data);
+        await AsyncStorage.setItem('messages', JSON.stringify(messageArray));
+      } catch (e) {
+        // saving error
+        console.log('FCM Message onMessage e :', e);
+      }
+    });
+
+    firebase.messaging().setBackgroundMessageHandler(async (remoteMessage) => {
+      try {
+        const currentMessages = await AsyncStorage.getItem('messages');
+        let messageArray = [];
+        if (currentMessages != null) {
+          messageArray = JSON.parse(currentMessages);
+        }
+        messageArray.push(remoteMessage.data);
+        await AsyncStorage.setItem('messages', JSON.stringify(messageArray));
+      } catch (e) {
+        // saving error
+        console.log('FCM Message setBackgroundMessageHandler e :', e);
+      }
+    });
+
+  }
+
+
   onNavigationStateChange(prevState, newState, action) {
     console.log("", prevState, newState, action);
   }
