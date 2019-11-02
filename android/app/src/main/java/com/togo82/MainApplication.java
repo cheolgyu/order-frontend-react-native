@@ -14,7 +14,7 @@ import com.dooboolab.kakaologins.RNKakaoLoginsPackage;
 import com.dooboolab.naverlogin.RNNaverLoginPackage;
 
 import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
-
+ import android.webkit.WebView;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -50,6 +50,7 @@ public class MainApplication extends Application implements ReactApplication {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this); // Remove this line if you don't want Flipper enabled
+    WebView.setWebContentsDebuggingEnabled(true);
   }
 
   /**

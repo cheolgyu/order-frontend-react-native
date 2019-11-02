@@ -30,7 +30,6 @@ class App extends React.Component {
   async init() {
     let fcmToken = await AsyncStorage.getItem('fcmToken');
     fcmToken = await firebase.messaging().getToken();
-    console.log(fcmToken);
   }
   async getToken() {
     let fcmToken = await AsyncStorage.getItem('fcmToken');
