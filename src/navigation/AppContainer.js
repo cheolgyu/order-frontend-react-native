@@ -3,10 +3,10 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { Button, Image, View, Text } from 'react-native';
 
-import AgreeServiceStack from './AgreeServiceStack';
-import AuthLoadingStack from './AuthLoadingStack';
-import AuthStack from './AuthStack';
-import AppStack from './AppStack';
+import AgreeServiceStack from './stack/AgreeServiceStack'
+//import AuthLoadingStack from './stack/AuthLoadingStack';
+import AuthStack from './stack/AuthStack';
+import AppStack from './stack/AppStack';
 
 export default createAppContainer(
     createSwitchNavigator(
@@ -17,7 +17,7 @@ export default createAppContainer(
             App: AppStack,
         },
         {
-            initialRouteName: 'AgreeService',
+            initialRouteName: 'App',
         }
     )
 );

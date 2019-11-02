@@ -1,8 +1,10 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import AuthLoadingScreen from '../screens/authLoading/AuthLoadingScreen';
+import PrivacyScreen from '../../screens/agree/PrivacyScreen';
+import TermsScreen from '../../screens/agree/TermsScreen';
 
-export default createStackNavigator({ AuthLoading: AuthLoadingScreen },
+export default createStackNavigator({ Privacy: PrivacyScreen, Terms: TermsScreen },
     {
+        initialRouteName: 'Privacy',
         defaultNavigationOptions: {
             headerStyle: {
                 backgroundColor: '#f4511e',
@@ -12,4 +14,5 @@ export default createStackNavigator({ AuthLoading: AuthLoadingScreen },
                 fontWeight: 'bold',
             },
         },
-    }); 
+    }
+);

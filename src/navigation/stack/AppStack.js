@@ -1,8 +1,10 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import LoginScreen from '../screens/auth/LoginScreen';
+import HomeScreen from '../../screens/app/HomeScreen';
+import DetailsScreen from '../../screens/app/DetailsScreen';
 
-export default createStackNavigator({ Login: LoginScreen },
+export default createStackNavigator({ Home: HomeScreen, Details: DetailsScreen },
     {
+        initialRouteName: 'Home',
         defaultNavigationOptions: {
             headerStyle: {
                 backgroundColor: '#f4511e',

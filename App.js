@@ -1,13 +1,11 @@
 import React from 'react';
-import { Button, Image, View, Text } from 'react-native';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
 //import AppContainer from './src/navigation/AppNavigator';
 import AppContainer from './src/navigation/AppContainer';
 import AsyncStorage from '@react-native-community/async-storage';
 
 import firebase from '@react-native-firebase/app';
 import '@react-native-firebase/messaging';
+
 
 // gets the current screen from navigation state
 function getActiveRouteName(navigationState) {
