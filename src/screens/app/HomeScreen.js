@@ -32,19 +32,6 @@ class HomeScreen extends React.Component {
         }
     };
 
-    async _init() {
-        const URL = env.API_URL + "shops";
-        try {
-            let response = await fetch(URL, {
-                method: 'GET'
-            });
-            let responseJson = await response.json();
-            return responseJson;
-        } catch (error) {
-            console.error(error);
-        }
-    }
-
     render() {
 
         if (this.state.loaded === 'false') {
@@ -67,7 +54,7 @@ class HomeScreen extends React.Component {
 
             return (
                 <WebView
-                    source={{ uri: 'http://localhost:3333/' }}
+                    source={{ uri: env.WEBVIEW_URL }}
                     userAgent={userAgent}
                     injectedJavaScript={runFirst}
                 />

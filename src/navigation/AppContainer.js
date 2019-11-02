@@ -13,7 +13,7 @@ export default createAppContainer(
         {
             AgreeService: AgreeServiceStack,
             //AuthLoading: AuthLoadingStack,
-            Auth: AuthStack,
+            //  Auth: AuthStack,
             App: AppStack,
         },
         {
