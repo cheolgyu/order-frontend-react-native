@@ -44,8 +44,8 @@ class HomeScreen extends React.Component {
                 (function() {
                     console.log("injectedJavaScript ");
                     console.log(this);
-                    window.$nuxt.$store
-                    .dispatch("device/set_fcm", '${this.state.fcmToken}', { root: true });
+                    window.device_fcmtoken ='${this.state.fcmToken}';
+                    
                 })();
             
                 true;
